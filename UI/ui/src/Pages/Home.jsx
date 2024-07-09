@@ -31,7 +31,15 @@ const Home = () => {
           filter: "grayscale(100%)",
         }}
       >
-        <Typography sx={{ padding: "12rem 15rem" }}>
+        <Typography
+          variant="h2"
+          sx={{
+            padding: "12rem 15rem",
+            fontFamily: "fantasy",
+            fontStyle: "oblique",
+            fontWeight: "bold",
+          }}
+        >
           Trending News Daily
         </Typography>
       </Box>
