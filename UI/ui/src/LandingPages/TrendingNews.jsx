@@ -1,29 +1,36 @@
 import { Box, Card, Typography } from "@mui/material";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Golf from "../Images/Golf.png";
 import Baseball from "../Images/Baseball.png";
 import Rugby from "../Images/Rugby.png";
 
 const TrendingNews = () => {
+  const navigate = useNavigate();
+
+  const handleCardClick = (page) => {
+    navigate(page);
+  };
+
   return (
     <Box
       sx={{
         height: "100vh",
         backgroundColor: "#EBEEF3",
-        display: "flex", // Ensure the outer box uses flexbox to center its content
+        display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        flexDirection: "column", // Align items in column direction
+        flexDirection: "column",
       }}
     >
       <Typography
-        variant="h4" // Adjust typography variant as needed
+        variant="h4"
         style={{
-          marginTop: "1rem", // Adjust top margin as needed
-          marginBottom: "2rem", // Add some bottom margin for spacing
-          boxShadow: "0px 22px 70px 4px rgba(0, 0, 0, 0.56)", // Box shadow style
-          backgroundColor: "white", // Optional: add a background color
-          padding: "1rem", // Optional: add padding for text container
+          marginTop: "1rem",
+          marginBottom: "2rem",
+          boxShadow: "0px 22px 70px 4px rgba(0, 0, 0, 0.56)",
+          backgroundColor: "white",
+          padding: "1rem",
           fontStyle: "italic",
         }}
       >
@@ -45,13 +52,15 @@ const TrendingNews = () => {
             marginTop: "4rem",
           }}
         >
-          {/* GOlf */}
+          {/* Golf */}
           <Box
+            onClick={() => handleCardClick("/Trending News")}
             style={{
               height: "505px",
               width: "370px",
               borderRadius: "2rem 0",
               backgroundColor: "white",
+              cursor: "pointer",
             }}
           >
             <Card
@@ -74,11 +83,13 @@ const TrendingNews = () => {
 
           {/* Baseball */}
           <Box
+            onClick={() => handleCardClick("/Trending News")}
             style={{
               height: "505px",
               width: "370px",
               borderRadius: "2rem 0",
               backgroundColor: "white",
+              cursor: "pointer",
             }}
           >
             <Card
@@ -101,11 +112,13 @@ const TrendingNews = () => {
 
           {/* Rugby */}
           <Box
+            onClick={() => handleCardClick("/Trending News")}
             style={{
               height: "505px",
               width: "370px",
               borderRadius: "2rem 0",
               backgroundColor: "white",
+              cursor: "pointer",
             }}
           >
             <Card

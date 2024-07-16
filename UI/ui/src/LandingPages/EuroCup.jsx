@@ -3,7 +3,6 @@ import React from "react";
 import Eurocup from "../Images/EuroCup.png";
 import { keyframes } from "@emotion/react";
 
-// Define keyframes for the animation
 const moveText = keyframes`
   0% {
     transform: translateX(100%);
@@ -45,12 +44,12 @@ const EuroCup = () => {
             position: "absolute",
             bottom: "0",
             width: "100%",
-            backgroundColor: "rgb(255, 255, 255)", // Optional: semi-transparent background
+            backgroundColor: "rgb(255, 255, 255)",
             padding: "8px 0",
-            animation: `${moveText} 17s linear infinite`, // Adjust animation duration as needed
-            whiteSpace: "break-spaces", // Prevents text from wrapping
-            overflow: "hidden", // Hides any overflow (though translateX will handle this)
-            textAlign: "center", // Center align text
+            animation: `${moveText} 17s linear infinite`,
+            whiteSpace: "break-spaces",
+            overflow: "hidden",
+            textAlign: "center",
             fontStyle: "italic",
             fontSize: "30px",
           }}

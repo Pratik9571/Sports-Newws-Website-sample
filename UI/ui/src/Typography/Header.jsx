@@ -24,7 +24,6 @@ const Header = () => {
         style={{
           fontSize: "4rem",
           fontWeight: "bold",
-          // fontFamily: ParadiseLove,
         }}
       >
         <i>Sports News</i>
@@ -41,24 +40,21 @@ const Header = () => {
           }}
         >
           <li style={{ marginLeft: "1rem" }}>
-            <Link
-              to="/home"
-              style={{ color: "#000000", textDecoration: "none" }}
-            >
+            <Link to="/" style={{ color: "#000000", textDecoration: "none" }}>
               Home
             </Link>
           </li>
           <li style={{ marginLeft: "1rem" }}>
             <Link
-              to="/category"
+              to="/EuroPage"
               style={{ color: "#000000", textDecoration: "none" }}
             >
-              Category
+              Euro Page
             </Link>
           </li>
           <li style={{ marginLeft: "1rem" }}>
             <Link
-              to="/trending-news"
+              to="/Trending News"
               style={{ color: "#000000", textDecoration: "none" }}
             >
               Trending News
@@ -66,7 +62,7 @@ const Header = () => {
           </li>
           <li style={{ marginLeft: "1rem" }}>
             <Link
-              to="/clubs-ranking"
+              to="/ClubPage"
               style={{ color: "#000000", textDecoration: "none" }}
             >
               Clubs Ranking
@@ -74,7 +70,7 @@ const Header = () => {
           </li>
           <li style={{ marginLeft: "1rem" }}>
             <Link
-              to="/about-us"
+              to="/About Us"
               style={{ color: "#000000", textDecoration: "none" }}
             >
               About Us

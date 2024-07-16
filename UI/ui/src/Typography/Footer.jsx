@@ -11,9 +11,9 @@ const Footer = () => {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        position: "relative",
+        position: "fixed",
         bottom: 0,
-        width: "100%", // Occupy full width
+        width: "100%",
       }}
     >
       <Box>

@@ -28,7 +28,7 @@ const SignUp = () => {
 
   const handleSignUp = (event) => {
     event.preventDefault();
-    // Here you can implement your sign-up logic, like sending data to a backend
+
     console.log("First Name:", firstName);
     console.log("Last Name:", lastName);
     console.log("Email:", email);
@@ -37,7 +37,7 @@ const SignUp = () => {
     console.log("Agreed to Terms:", agreed);
     console.log("Gender:", gender);
     console.log("Role:", role);
-    // Reset form fields
+
     setFirstName("");
     setLastName("");
     setEmail("");
@@ -55,7 +55,7 @@ const SignUp = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        height: "100vh", // Adjust as needed to center the form vertically
+        height: "100vh",
       }}
     >
       <Typography variant="h4" gutterBottom>
@@ -65,7 +65,7 @@ const SignUp = () => {
         component="form"
         onSubmit={handleSignUp}
         sx={{
-          width: "400px", // Adjust width as needed
+          width: "400px",
           display: "flex",
           flexDirection: "column",
           gap: "1rem",

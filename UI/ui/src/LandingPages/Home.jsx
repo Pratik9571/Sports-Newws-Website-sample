@@ -9,11 +9,11 @@ const Home = () => {
     <div
       style={{
         display: "flex",
-        justifyContent: "center", // Center the Box horizontally
-        alignItems: "center", // Center the Box vertically
+        justifyContent: "center",
+        alignItems: "center",
         padding: "1rem",
         position: "relative",
-        marginBottom: "200px", // Add space below the header
+        marginBottom: "200px",
         marginTop: -10,
         marginLeft: -10,
         marginRight: -10,
@@ -68,9 +68,9 @@ const Home = () => {
         >
           <Typography
             style={{
-              fontSize: "26px", // Adjust the font size as needed
-              fontWeight: "bold", // Optional: make the text bold
-              textAlign: "center", // Center the text
+              fontSize: "26px",
+              fontWeight: "bold",
+              textAlign: "center",
               display: "flex",
               flexDirection: "column",
               gap: "2rem",
@@ -97,9 +97,9 @@ const Home = () => {
         >
           <Typography
             style={{
-              fontSize: "26px", // Adjust the font size as needed
-              fontWeight: "bold", // Optional: make the text bold
-              textAlign: "center", // Center the text
+              fontSize: "26px",
+              fontWeight: "bold",
+              textAlign: "center",
               display: "flex",
               flexDirection: "column",
               marginTop: "10rem",
